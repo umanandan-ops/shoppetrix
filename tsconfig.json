@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Language and Environment */
+    "target": "es6",
+    "lib": ["ES2015", "DOM"],
+    
+    /* Modules */
+    "module": "commonjs",
+    
+    /* Type Checking */
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
