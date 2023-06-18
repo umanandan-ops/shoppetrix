@@ -39,7 +39,7 @@ function myapi() {
         var apidata, productList;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, fetch('https://fakestoreapi.com/products')];
+                case 0: return [4 /*yield*/, fetch('./amazon_products.json')];
                 case 1:
                     apidata = _a.sent();
                     return [4 /*yield*/, apidata.json()];
@@ -48,7 +48,7 @@ function myapi() {
                     console.log(apidata);
                     productList = document.getElementById('root');
                     apidata.forEach(function (item) {
-                        virtual(item.title, item.image, item.description, productList);
+                        virtual(item.heading, item.imgAddress, item.price, item.link, productList);
                     });
                     return [2 /*return*/];
             }
@@ -56,26 +56,25 @@ function myapi() {
     });
 }
 myapi();
-function virtual(heading, imgAddress, paragraph, container) {
+function virtual(heading, imgAddress, price, link, container) {
     var productContainer = document.createElement('div');
     productContainer.className = 'product';
     var h3 = document.createElement('h3');
     h3.innerHTML = heading;
     var img = document.createElement('img');
     img.height = 200;
-    img.width = 175;
+    img.width = 180;
     img.src = imgAddress;
-    var logo = document.createElement('img');
-    logo.height = 30;
-    logo.width = 30;
-    logo.src = './images/cart-logo.png';
-    logo.alt = 'Logo';
-    logo.className = 'logo';
-    var button = document.createElement('button');
+    var button = document.createElement('a');
     button.className = 'but';
-    button.innerHTML = '<img src="./images/cart-logo.png">' + 'Go to site';
+    button.href = link;
+    button.innerHTML = '<img src="./images/cart-logo.png"> Go to site';
+    var p = document.createElement('p');
+    p.className = "price";
+    p.innerHTML = price;
     productContainer.appendChild(h3);
     productContainer.appendChild(img);
+    productContainer.appendChild(p);
     productContainer.appendChild(button);
     container.appendChild(productContainer);
 }
