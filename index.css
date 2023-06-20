@@ -45,57 +45,10 @@ header .main-logo{
     top:-45px;
     animation: rotation 1.6s  linear;
 }
-@media (max-width:600px) {
-    header .main-logo{
-        height:135px;
-        width:235px;
-        top:1%;
-    }
-    header .logo-stamp{
-        height:100px;
-        width:150px;
-        top:2%;
-    }
-    #root{
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-   #root .product{
-        height:190px;
-        width:100px;
-        padding:10px;   
-    }
-    #root .product img{
-        height:100px ;
-        width:85px;
-    }
-    #root .product h3{
-        font-size:10px;
-        width:90px;
-        height:40px;
-    }
-    #root button{
-        height:20px;
-        width:80px;
-        padding:2px;
-        background-color: rgb(101, 100, 100);
-        color:white;
-        border: none;
-        font-size: 12px;
-        margin-top:5px;
-        text-align: center;
-    }
-    #root .but img{
-        height:15px;
-        width:15px;
-}
-}
-
 #root{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    /* justify-content:; */
 }
 
 
@@ -148,6 +101,72 @@ header .main-logo{
     text-align: center;
     margin-top:3px;
     font-size: 20px;
+}
+@media (max-width:600px) {
+    header .main-logo{
+        height:135px;
+        width:235px;
+        top:1%;
+    }
+    header .logo-stamp{
+        height:100px;
+        width:150px;
+        top:2%;
+    }
+    #root{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+   #root .product{
+        height:220px;
+        width:110px;
+        padding:10px;  
+        align-items: center; 
+        
+    }
+    #root .product img{
+        height:100px ;
+        width:85px;
+    }
+    #root .product h3{
+        font-size:10px;
+        width:90px;
+        height:40px;
+    }
+    /* #root button{
+        height:20px;
+        width:80px;
+        padding:2px;
+        background-color: rgb(101, 100, 100);
+        color:white;
+        border: none;
+        font-size: 12px;
+        margin-top:5px;
+        text-align: center;
+    } */
+    #root .but img{
+        height:15px;
+        width:15px;
+        margin-bottom:15px;
+        
+}
+    #root .but{
+        height:30px;
+        width:80px;
+        align-items: center;
+        padding:5px;
+        margin-left:4px;
+    }
+    #root p{
+        font-size: 11px;
+    }
+    .product a{
+        line-height: 0px;
+        font-size: 11px;
+    }
+    
+
 }
 
 
