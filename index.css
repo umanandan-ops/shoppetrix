@@ -48,7 +48,7 @@ header .main-logo{
 #root{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content:; */
+    justify-content:space-evenly;
 }
 
 
@@ -116,7 +116,7 @@ header .main-logo{
     #root{
         display: flex;
         flex-wrap: wrap;
-        
+        justify-content: space-evenly;
     }
    #root .product{
         height:220px;
