@@ -63,6 +63,7 @@ header .main-logo{
     height:400px;
     width:250px;
     border: 1px solid grey;
+    border-radius: 15px;
     padding:25px;
     margin:10px;
      
@@ -90,6 +91,7 @@ header .main-logo{
     color:white;
     font-size: 20px;
     line-height: 50px;  
+    border-radius: 15px;
 }
 .but img{
      height:25px;
@@ -101,6 +103,7 @@ header .main-logo{
     text-align: center;
     margin-top:3px;
     font-size: 20px;
+    font-weight: bold;
 }
 @media (max-width:600px) {
     header .main-logo{
@@ -119,20 +122,19 @@ header .main-logo{
         justify-content: space-evenly;
     }
    #root .product{
-        height:220px;
-        width:110px;
-        padding:10px;  
-        align-items: center; 
-        
+        height:260px;
+        width:44%;
+          
     }
     #root .product img{
-        height:100px ;
-        width:85px;
+        height:120px ;
+        width:95px;
     }
     #root .product h3{
         font-size:10px;
-        width:90px;
-        height:40px;
+        width:100%;
+        height:35px;
+        overflow: hidden;
     }
     /* #root button{
         height:20px;
